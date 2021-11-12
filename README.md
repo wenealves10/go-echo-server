@@ -2,8 +2,6 @@
 
 Basic RESTful API implementation using golang's echo framework; with sample demonstration, best practices and modular support (to do hot integration in your existing project).
 
-For more information, **user manual**: <https://github.com/yuil-plug-and-play/go-rest-api/docs/>
-
 ## Capabilities of this boilerplate
 
 1. Static server
