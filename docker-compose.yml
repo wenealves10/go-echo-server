@@ -1,0 +1,32 @@
+version: "3"
+
+services:
+  mysqlgolang:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: "echogoland"
+      MYSQL_DATABASE: "golang"
+    volumes:
+      - ./data:/var/lib/mysql
+    networks:
+      - mysql-compose-network
+
+  echogolang:
+    image: echogo
+    ports:
+      - "4000:3000"
+    depends_on:
+      - mysqlgolang
+    networks:
+      - mysql-compose-network
+
+  adminer:
+    image: adminer
+    ports:
+      - 8082:8080
+    networks:
+      - mysql-compose-network
+
+networks:
+  mysql-compose-network:
+    driver: bridge

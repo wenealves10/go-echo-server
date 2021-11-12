@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
+	"log"
 	"net/http"
 	"os"
 	"strings"
@@ -34,11 +35,11 @@ func sendInfo(c echo.Context) error {
 	reqM := c.Request()
 	resM := c.Response()
 	return c.JSON(200, map[string]string{
-		"name":        "Children_app_api",
-		"developer":   "Yuil Tripathee",
+		"name":        "Echo Rest",
+		"developer":   "Wene Alves",
 		"version":     "v1.0",
 		"status_code": fmt.Sprintf("%d", resM.Status),
-		"time":        time.Now().Format("2006/01/01 - 15:04:05"),
+		"time":        time.Now().Format("02/01/2006 - 15:04:05"),
 		"protocol":    reqM.Proto,
 		"ip":          c.RealIP(),
 		"method":      reqM.Method,
@@ -51,11 +52,12 @@ func sendInfo(c echo.Context) error {
 // route handler to stream image
 func sendImage(c echo.Context) error {
 	audForID := strings.ToLower(c.Param("id"))
+	log.Println(audForID)
 	// sample validation (constraint: parameter must be single character between a - z)
 	if len(audForID) > 1 || audForID < "a" || audForID > "z" {
 		return c.JSON(500, statMsgData[0])
 	}
-	audForAddr := fmt.Sprintf("res/image/%s.jpg", audForID)
+	audForAddr := fmt.Sprintf("res/image/%s.jpg", "A")
 	return c.File(audForAddr)
 }
 
@@ -163,7 +165,7 @@ func main() {
 			// print formatting the custom logger tailored for DEVELOPMENT environment
 			fmt.Printf("\n[%s] %v |%s %3d %s| %8s | %10s |%s %-7s %s %s",
 				name, // name of server (APP) with the environment
-				time.Now().Format("2006/01/02 - 15:04:05"), // TIMESTAMP for route access
+				time.Now().Format("02/01/2006 - 15:04:05"), // TIMESTAMP for route access
 				statusColor, resStatus, resetColor, // response status
 				req.Proto,                          // protocol
 				c.RealIP(),                         // client IP
@@ -177,7 +179,7 @@ func main() {
 			Format: fmt.Sprintf("\n%s | ${host} | ${time_custom} | ${status} | ${latency_human} | ${remote_ip} | ${bytes_in} bytes_in | ${bytes_out} bytes_out | ${method} | ${uri} ",
 				name,
 			),
-			CustomTimeFormat: "2006/01/02 15:04:05", // custom readable time format
+			CustomTimeFormat: "02/01/2006 15:04:05", // custom readable time format
 			Output:           os.Stdout,             // output method
 		}))
 	}

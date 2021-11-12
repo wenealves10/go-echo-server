@@ -7,12 +7,11 @@ import (
 
 var (
 	// database information
-	dbhostsip  = "127.0.0.1:3306" // IP address of database server
-	dbusername = "root"           // username of the database user
-	dbpassword = ""               // password of the database user
-	dbname     = "database_name"  // name of the database
-	dbcharset  = "utf8"           // database character set
-
+	dbhostsip  = "mysqlgolang:3306" // IP address of database server
+	dbusername = "root"             // username of the database user
+	dbpassword = "echogoland"       // password of the database user
+	dbname     = "golang"           // name of the database
+	dbcharset  = "utf8"             // database character set
 	// list of relations in database needed for querying
 	sampleTable = "sample" // table name for airplane
 )

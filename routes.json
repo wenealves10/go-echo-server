@@ -1,0 +1,232 @@
+[
+  {
+    "method": "GET",
+    "path": "/api/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "POST",
+    "path": "/api/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "CONNECT",
+    "path": "/api/v1",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/v1",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "TRACE",
+    "path": "/api/v1/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "GET",
+    "path": "/api/v1/source/local/",
+    "name": "main.sendSampleLocalData"
+  },
+  {
+    "method": "DELETE",
+    "path": "/api",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "PUT",
+    "path": "/api/v1/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "TRACE",
+    "path": "/api",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "HEAD",
+    "path": "/api/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "TRACE",
+    "path": "/api/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "TRACE",
+    "path": "/api/v1",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "CONNECT",
+    "path": "/api/v1/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "OPTIONS",
+    "path": "/api/v1/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "GET",
+    "path": "static/*",
+    "name": "github.com/labstack/echo.static.func1"
+  },
+  {
+    "method": "GET",
+    "path": "/api",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "HEAD",
+    "path": "/api",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "PATCH",
+    "path": "/api",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "PROPFIND",
+    "path": "/api",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "HEAD",
+    "path": "/api/v1",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/v1/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v1/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "OPTIONS",
+    "path": "/api",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "PROPFIND",
+    "path": "/api/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/v1",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "GET",
+    "path": "/api/v1/",
+    "name": "main.sendInfo"
+  },
+  {
+    "method": "GET",
+    "path": "/api/v1/img/:id",
+    "name": "main.sendImage"
+  },
+  {
+    "method": "CONNECT",
+    "path": "/api/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "OPTIONS",
+    "path": "/api/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "PUT",
+    "path": "/api/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "GET",
+    "path": "/api/v1",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v1",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "GET",
+    "path": "/api/v1/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "HEAD",
+    "path": "/api/v1/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "CONNECT",
+    "path": "/api",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "PUT",
+    "path": "/api",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "PROPFIND",
+    "path": "/api/v1",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "PROPFIND",
+    "path": "/api/v1/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "GET",
+    "path": "static",
+    "name": "github.com/labstack/echo.static.func1"
+  },
+  {
+    "method": "POST",
+    "path": "/api",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "OPTIONS",
+    "path": "/api/v1",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "PUT",
+    "path": "/api/v1",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/v1/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "GET",
+    "path": "/api/v1/source/DB/",
+    "name": "main.sendSampleDBData"
+  }
+]
