@@ -77,18 +77,18 @@ func changeDBdataToJSON(sqlString string) ([]map[string]interface{}, error) {
 // sample buildout query: SELECT * FROM table_name WHERE id = id_requested;
 func getDataDBbyIndex(table string, index string, id string) (int, map[string]interface{}) {
 	status := 200
-	response := make(map[string]interface{})
+	var responseT map[string]interface{}
 	sqlQuery := fmt.Sprintf("SELECT * FROM %s WHERE %s = '%s';", table, index, id)
 	dbData, err := changeDBdataToJSON(sqlQuery)
 	if err != nil {
 		status = 500
-		response = statMsgData[3] // Error found querying with the database
+		responseT = statMsgData[3] // Error found querying with the database
 	} else if len(dbData) == 0 {
 		status = 500
-		response = statMsgData[4] // Data not found in the database
+		responseT = statMsgData[4] // Data not found in the database
 	} else {
-		response = statMsgData[2] // Everything's fine
-		response["data"] = dbData
+		responseT = statMsgData[2] // Everything's fine
+		responseT["data"] = dbData
 	}
-	return status, response
+	return status, responseT
 }

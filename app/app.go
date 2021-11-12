@@ -43,7 +43,7 @@ func sendInfo(c echo.Context) error {
 		"protocol":    reqM.Proto,
 		"ip":          c.RealIP(),
 		"method":      reqM.Method,
-		"url":         fmt.Sprintf("%s", reqM.URL),
+		"url":         fmt.Sprint(reqM.URL),
 		"bytes_out":   fmt.Sprintf("%d", resM.Size),
 		"server_type": "Testing",
 	})
